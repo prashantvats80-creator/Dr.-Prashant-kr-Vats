@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Prashant Kumar Vats | Premium Digital Growth Store</title>
+    <meta name="description" content="Premium Digital Growth Store For Dentists & Doctors. Helping Clinics Grow Through Ethical Systems & Modern Digital Strategies.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#050505',
+                        primary: '#3b82f6',
+                        accent: '#60a5fa',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { background: linear-gradient(135deg, #020617 0%, #075985 100%); background-attachment: fixed; color: #ffffff; overflow-x: hidden; }
+        .text-gradient { background: linear-gradient(to right, #7dd3fc, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-gradient-card { background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%); }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glass-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 1.5rem; transition: all 0.3s ease; }
+        .glass-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.2); background: rgba(255, 255, 255, 0.08); }
+        .btn-glow { background-color: #ffffff; color: #000000; border: none; box-shadow: 0 4px 15px rgba(255,255,255,0.05); transition: all 0.3s ease; animation: subtle-glow 3s infinite alternate; }
+        .btn-glow:hover { background-color: #e5e7eb; box-shadow: 0 8px 25px rgba(255,255,255,0.25); transform: translateY(-2px); animation-play-state: paused; }
+        .btn-secondary { background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #ffffff; transition: all 0.3s ease; animation: subtle-border-glow 4s infinite alternate; }
+        .btn-secondary:hover { background-color: rgba(255, 255, 255, 0.1); }
+        @keyframes subtle-glow {
+            0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); }
+            100% { box-shadow: 0 0 25px rgba(255, 255, 255, 0.3); }
+        }
+        @keyframes subtle-border-glow {
+            0% { box-shadow: 0 0 0 rgba(255, 255, 255, 0); border-color: rgba(255, 255, 255, 0.1); }
+            100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.3); }
+        }
+        .blob { position: absolute; border-radius: 50%; filter: blur(90px); z-index: -1; opacity: 0.15; animation: float 10s infinite alternate ease-in-out; }
+        @keyframes float { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(30px, -30px) scale(1.1); } }
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .nav-scrolled { background: rgba(0,0,0,0.6); backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.1); padding-top: 1rem !important; padding-bottom: 1rem !important; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .badge { background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); color: #60a5fa; padding: 4px 12px; border-radius: 0.25rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; display: inline-block;}
+    </style>
+</head>
+<body class="font-sans antialiased relative">
+
+    <div class="blob bg-blue-600 w-[500px] h-[500px] top-[-200px] left-[-100px]"></div>
+    <div class="blob bg-primary w-[400px] h-[400px] top-[30%] right-[-100px]" style="animation-delay: -2s;"></div>
+    <div class="blob bg-blue-900 w-[600px] h-[600px] bottom-[-200px] left-[20%]" style="animation-delay: -4s;"></div>
+
+    <nav id="navbar" class="fixed w-full z-50 top-0 transition-all duration-300 py-5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <a href="#" class="font-heading font-bold text-xl tracking-tight text-white flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-sm font-sans tracking-normal shadow-[0_0_15px_rgba(37,99,235,0.4)] border border-white/20">PKV</div>
+                    Dr. Prashant Kumar Vats
+                </a>
+                <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+                    <a href="#" class="hover:text-white transition-colors">Home</a>
+                    <a href="#services" class="hover:text-white transition-colors">Services</a>
+                    <a href="#sops" class="hover:text-white transition-colors">SOP Store</a>
+                    <a href="#websites" class="hover:text-white transition-colors">Website Plans</a>
+                    <a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a>
+                    <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-full text-xs font-bold shadow-[0_0_15px_rgba(37,99,235,0.4)]">Contact Us</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full glass border-b border-white/5 py-4 px-6 flex flex-col gap-4">
+            <a href="#" class="text-gray-300 hover:text-white font-medium">Home</a>
+            <a href="#services" class="text-gray-300 hover:text-white font-medium">Services</a>
+            <a href="#sops" class="text-gray-300 hover:text-white font-medium">SOP Store</a>
+            <a href="#websites" class="text-gray-300 hover:text-white font-medium">Website Plans</a>
+            <a href="#testimonials" class="text-gray-300 hover:text-white font-medium">Testimonials</a>
+            <a href="#faq" class="text-gray-300 hover:text-white font-medium">FAQ</a>
+            <a href="#contact" class="text-primary font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-20 lg:pt-48 lg:pb-32 px-6 relative">
+        <div class="max-w-5xl mx-auto text-center reveal">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/10 text-xs sm:text-sm font-medium text-gray-300 mb-8 mx-auto">
+                <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span> For Doctors. By Doctors.
+            </div>
+            <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                Grow Your Clinic With <br class="hidden sm:block"/>
+                <span class="text-gradient">Modern Digital Systems</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Premium SOPs, Meta Ads, Google Ads, Website Design, Patient Communication Systems & Digital Growth Frameworks — specially designed by Dr. Prashant Kumar Vats for modern clinics and dentists.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full btn-glow text-black font-semibold flex items-center justify-center gap-2">Explore Services</a>
+                <a href="#sops" class="w-full sm:w-auto px-8 py-4 rounded-full btn-secondary text-white font-medium flex items-center justify-center">Instant Access</a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-20 relative reveal">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20"></div>
+            <div class="relative rounded-2xl bg-gradient-card border border-white/10 p-2 sm:p-4 overflow-hidden shadow-2xl">
+                <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5 mb-4">
+                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div><div class="w-3 h-3 rounded-full bg-yellow-500/80"></div><div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 p-2 sm:p-4">
+                    <div class="h-32 rounded-xl bg-white/5 border border-white/5 p-4 flex flex-col justify-between"><div class="text-gray-400 text-sm">Patient Leads</div><div class="text-3xl font-heading font-bold text-white">+142%</div></div>
+                    <div class="h-32 rounded-xl bg-white/5 border border-white/5 p-4 flex flex-col justify-between"><div class="text-gray-400 text-sm">Treatment Acceptance</div><div class="text-3xl font-heading font-bold text-accent">85%</div></div>
+                    <div class="h-32 rounded-xl bg-gradient-to-br from-blue-600/20 to-transparent border border-blue-500/20 p-4 flex flex-col justify-between"><div class="text-gray-400 text-sm">Premium SOPs</div><div class="text-3xl font-heading font-bold text-white">Active</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="badge mb-4">Clinic Growth</span>
+                <h2 class="font-heading text-3xl md:text-5xl font-bold mb-4">Why Doctors Trust Us</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Trust Cards -->
+                <div class="glass-card p-8 reveal"><h3 class="text-xl font-heading font-semibold mb-3">Built By A Doctor</h3></div>
+                <div class="glass-card p-8 reveal"><h3 class="text-xl font-heading font-semibold mb-3">Ethical Growth Systems</h3></div>
+                <div class="glass-card p-8 reveal"><h3 class="text-xl font-heading font-semibold mb-3">Designed For Indian Clinics</h3></div>
+                <div class="glass-card p-8 reveal"><h3 class="text-xl font-heading font-semibold mb-3">Premium Communication</h3></div>
+                <div class="glass-card p-8 reveal"><h3 class="text-xl font-heading font-semibold mb-3">Modern Digital Strategies</h3></div>
+                <div class="glass-card p-8 reveal"><h3 class="text-xl font-heading font-semibold mb-3">Easy To Implement</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services: Meta Ads -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-5xl font-bold mb-16 reveal border-b border-white/10 pb-4">Meta Ads Setup For Dentists</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 reveal flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">Meta Ads Setup – 1 Ad Campaign</h3>
+                    <p class="text-gray-400 mb-8">Single high-converting Meta ad setup designed for local patient lead generation.</p>
+                    <ul class="text-gray-300 mb-10 flex-grow space-y-2"><li>Audience Targeting</li><li>Lead Form Setup</li><li>Ad Strategy</li><li>Conversion Optimization</li></ul>
+                    <a href="https://rzp.io/rzp/nFgH8Jf" class="btn-glow block text-center py-4 rounded-xl font-bold" target="_blank" rel="noopener noreferrer">Buy Now</a>
+                </div>
+                <div class="glass-card p-8 reveal flex flex-col border-blue-500/30">
+                    <h3 class="text-2xl font-bold mb-2">Meta Ads Setup – 5 Ad Campaigns</h3>
+                    <p class="text-gray-400 mb-8">Advanced Meta ads package for clinics wanting aggressive lead generation.</p>
+                    <ul class="text-gray-300 mb-10 flex-grow space-y-2"><li>5 Ad Campaigns</li><li>Creative Strategy</li><li>Advanced Audience Testing</li><li>Lead Optimization</li></ul>
+                    <a href="https://rzp.io/rzp/6JXEiyZ" class="btn-glow block text-center py-4 rounded-xl font-bold" target="_blank" rel="noopener noreferrer">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services: Google Ads -->
+    <section class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-5xl font-bold mb-16 reveal border-b border-white/10 pb-4">Google Ads Setup For Clinics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 reveal flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">Setup My Google Ad – 1 Campaign</h3>
+                    <p class="text-gray-400 mb-8">Professional Google Ads setup for clinics wanting patient calls.</p>
+                    <ul class="text-gray-300 mb-10 flex-grow space-y-2"><li>Keyword Research</li><li>Call Ads</li><li>Local Campaign</li><li>Basic Optimization</li></ul>
+                    <a href="https://rzp.io/rzp/30oV0LYI" class="btn-glow block text-center py-4 rounded-xl font-bold" target="_blank" rel="noopener noreferrer">Buy Now</a>
+                </div>
+                <div class="glass-card p-8 reveal flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">Setup Five Google Ads Campaigns</h3>
+                    <p class="text-gray-400 mb-8">Advanced Google Ads package for clinics wanting stronger reach.</p>
+                    <ul class="text-gray-300 mb-10 flex-grow space-y-2"><li>5 Google Campaigns</li><li>Keyword Targeting</li><li>Optimization Strategy</li><li>Call Conversion Focus</li></ul>
+                    <a href="https://rzp.io/rzp/Ew9cYk5W" class="btn-glow block text-center py-4 rounded-xl font-bold" target="_blank" rel="noopener noreferrer">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services: GMB -->
+     <section class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+             <div class="glass-card p-8 md:p-12 reveal border-accent/20">
+                <h3 class="text-3xl font-heading font-bold mb-3">Advanced GMB Optimization</h3>
+                <p class="text-gray-300 mb-6">Optimize your Google Business Profile for higher rankings and more calls.</p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="badge">SEO</span><span class="badge">Ranking Strategy</span><span class="badge">Reviews</span>
+                </div>
+                <a href="https://rzp.io/rzp/7yt0sjIT" class="btn-glow inline-block text-center px-8 py-4 rounded-xl font-bold" target="_blank" rel="noopener noreferrer">Optimize My GMB</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Websites Section -->
+    <section id="websites" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-5xl font-bold mb-16 reveal border-b border-white/10 pb-4">Website Design Solutions For Clinics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic -->
+                <div class="glass-card p-8 reveal flex flex-col">
+                    <span class="badge self-start mb-4">Simple & Professional</span>
+                    <h3 class="text-xl font-bold mb-2">Basic Website For Doctors</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Generic professional website designed for doctors who want a clean online presence.</p>
+                    <p class="text-xs text-gray-500 mb-4">No hosting charges required.</p>
+                    <a href="https://rzp.io/rzp/584wzmT" class="btn-glow block text-center py-3 rounded-lg text-sm font-bold" target="_blank" rel="noopener noreferrer">Get Basic Website</a>
+                </div>
+                <!-- Utility -->
+                <div class="glass-card p-8 reveal flex flex-col border-primary/50 relative">
+                    <div class="absolute top-0 right-0 bg-primary px-3 py-1 text-xs font-bold rounded-bl-lg">Most Popular</div>
+                    <span class="badge self-start mb-4">Professional Clinic Presence</span>
+                    <h3 class="text-xl font-bold mb-2">Utility-Based Website</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Professional clinic website integrated with clinic photos, Maps and contact details.</p>
+                     <p class="text-xs text-gray-500 mb-4">Hosting is free. Domain required.</p>
+                    <a href="https://rzp.io/rzp/OHlF7bF" class="btn-glow block text-center py-3 rounded-lg text-sm font-bold" target="_blank" rel="noopener noreferrer">Get Utility Website</a>
+                </div>
+                <!-- Premium -->
+                <div class="glass-card p-8 reveal flex flex-col">
+                    <span class="badge self-start mb-4">Luxury Digital Presence</span>
+                    <h3 class="text-xl font-bold mb-2">Premium SEO Website</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Highly SEO optimized premium website designed for stronger branding.</p>
+                     <p class="text-xs text-gray-500 mb-4">Free hosting. Free domain if available.</p>
+                    <a href="https://rzp.io/rzp/vqwe5ri" class="btn-glow block text-center py-3 rounded-lg text-sm font-bold" target="_blank" rel="noopener noreferrer">Get Premium Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOP Store -->
+    <section id="sops" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="badge mb-4">Premium Assets</span>
+                <h2 class="font-heading text-3xl md:text-5xl font-bold mb-4">Patient Consultation & Treatment Acceptance Systems</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto">Premium consultation SOPs designed to improve patient trust, increase premium treatment acceptance and grow clinic revenue ethically.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Generate SOP Cards 1-11 concisely -->
+                <!-- SOP 1 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Handle Bargaining Patients</h3>
+                    <a href="https://rzp.io/rzp/vck1CXbU" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                <!-- SOP 2 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Convince Patients To Choose Zirconia Over PFM Crown</h3>
+                    <a href="https://rzp.io/rzp/eS0ANGU" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                <!-- SOP 3 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">Convert ₹20K Braces Patients Into ₹80K Premium Cases</h3>
+                    <a href="https://rzp.io/rzp/HdVXLCP" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                 <!-- SOP 4 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Consult A First-Time Patient Professionally</h3>
+                    <a href="https://rzp.io/rzp/OCGTuFcX" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                 <!-- SOP 5 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Convince Patients For Root Canal Treatment</h3>
+                    <a href="https://rzp.io/rzp/IYaFbAqS" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                 <!-- SOP 6 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Convince Patients For Teeth Whitening</h3>
+                    <a href="https://rzp.io/rzp/T7ZbObK" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                 <!-- SOP 7 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Convince Patients For Veneers</h3>
+                    <a href="https://rzp.io/rzp/funV5mw9" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                 <!-- SOP 8 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Convince Patients To Choose Implant Over Bridge</h3>
+                    <a href="https://rzp.io/rzp/rjY6rMHp" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                  <!-- SOP 9 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Convince Patients For Dental Implants</h3>
+                    <a href="https://rzp.io/rzp/DTqCHNu0" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                 <!-- SOP 10 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Convince Patients For Zirconia Caps</h3>
+                    <a href="https://rzp.io/rzp/ZNzA1bxD" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+                 <!-- SOP 11 -->
+                <div class="glass-card p-6 reveal hover:border-accent">
+                    <h3 class="font-bold text-lg mb-4">How To Convince Patients For Full Mouth Implants</h3>
+                    <a href="https://rzp.io/nrEuaPXk" class="text-primary text-sm font-semibold hover:text-white transition" target="_blank" rel="noopener noreferrer">Get SOP &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Request & About -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="reveal">
+                <h2 class="font-heading text-3xl font-bold mb-4">Meet Dr. Prashant Kumar Vats</h2>
+                <p class="text-gray-400 mb-6 leading-relaxed">Helping dentists and clinics grow ethically using SOPs, patient communication systems, digital marketing strategies and modern clinic growth frameworks.</p>
+            </div>
+            
+            <div class="glass-card p-8 reveal border-accent/30">
+                <h2 class="font-heading text-2xl font-bold mb-2">Need Something Custom?</h2>
+                <p class="text-gray-400 text-sm mb-6">If there is something you want which is not listed on the website, feel free to contact us.</p>
+                <div class="bg-white/5 border border-white/10 rounded-lg p-4 mb-4">
+                    <a href="mailto:oracle.dental.unit@gmail.com" class="text-primary font-medium hover:text-white transition break-all" target="_blank" rel="noopener noreferrer">oracle.dental.unit@gmail.com</a>
+                </div>
+                <p class="text-xs text-gray-500">Custom SOPs, marketing systems, clinic branding solutions and digital growth services are available on request.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & FAQ (Simplified for space) -->
+    <section id="testimonials" class="py-24 px-6 relative">
+         <div class="max-w-7xl mx-auto text-center reveal">
+            <h2 class="font-heading text-3xl font-bold mb-12">Clinic Success Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div class="glass-card p-6"><p class="text-gray-300 italic mb-4">"The meta ads setup transformed our lead generation overnight."</p><div class="font-bold">- Dr. Sharma</div></div>
+                <div class="glass-card p-6"><p class="text-gray-300 italic mb-4">"These SOPs made premium treatment acceptance so much easier for my staff."</p><div class="font-bold">- Dr. Patel</div></div>
+                <div class="glass-card p-6"><p class="text-gray-300 italic mb-4">"Highly recommend the premium website. Our local SEO rankings skyrocketed."</p><div class="font-bold">- Dr. Reddy</div></div>
+            </div>
+         </div>
+    </section>
+
+    <section id="faq" class="py-24 px-6 relative">
+        <div class="max-w-3xl mx-auto reveal">
+            <h2 class="font-heading text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="glass-card p-5 cursor-pointer" onclick="this.lastElementChild.classList.toggle('max-h-0'); this.lastElementChild.classList.toggle('max-h-40'); this.lastElementChild.classList.toggle('mt-4')">
+                    <h4 class="font-bold">Are these SOPs instantly downloadable?</h4>
+                    <p class="text-gray-400 text-sm max-h-0 overflow-hidden transition-all duration-300">Yes, upon successful payment, you will receive instant access.</p>
+                </div>
+                <div class="glass-card p-5 cursor-pointer" onclick="this.lastElementChild.classList.toggle('max-h-0'); this.lastElementChild.classList.toggle('max-h-40'); this.lastElementChild.classList.toggle('mt-4')">
+                    <h4 class="font-bold">Are these systems designed for dentists?</h4>
+                    <p class="text-gray-400 text-sm max-h-0 overflow-hidden transition-all duration-300">Yes, specifically tailored for dental clinics.</p>
+                </div>
+                 <div class="glass-card p-5 cursor-pointer" onclick="this.lastElementChild.classList.toggle('max-h-0'); this.lastElementChild.classList.toggle('max-h-40'); this.lastElementChild.classList.toggle('mt-4')">
+                    <h4 class="font-bold">Can these SOPs improve patient conversion?</h4>
+                    <p class="text-gray-400 text-sm max-h-0 overflow-hidden transition-all duration-300">Absolutely, they are built on proven ethical communication frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-32 px-6 relative text-center">
+        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent z-0"></div>
+        <div class="max-w-3xl mx-auto relative z-10 reveal">
+            <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6">Build A Premium Modern Clinic</h2>
+            <p class="text-xl text-gray-400 mb-10">Modern clinics grow through systems, communication, branding and patient trust.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#sops" class="btn-glow px-8 py-4 rounded-full font-bold">Explore SOPs</a>
+                <a href="#services" class="btn-secondary px-8 py-4 rounded-full font-bold transition">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/5 py-12 text-center relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="font-heading font-bold text-xl mb-4">Dr. Prashant Kumar Vats</div>
+            <p class="text-gray-500 text-sm mb-8">© 2026 Dr. Prashant Kumar Vats — For Doctors. By Doctors.</p>
+        </div>
+    </footer>
+
+    <!-- Audio Player Button -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="https://assets.mixkit.co/music/preview/mixkit-ambient-tech-1627.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" class="fixed bottom-6 right-6 z-50 w-12 h-12 flex items-center justify-center rounded-full glass-card hover:bg-white/10 transition-all shadow-xl border border-white/20" aria-label="Toggle Background Music">
+        <svg id="music-icon" class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+    </button>
+
+    <script>
+        // High Performance Intersection Observer for Reveals
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach((el, index) => {
+                // Add a very slight delay stagger logic for better aesthetic flow
+                el.style.transitionDelay = (index % 4) * 0.1 + 's';
+                observer.observe(el);
+            });
+            
+            // Music Player Logic
+            const bgMusic = document.getElementById('bg-music');
+            const musicToggle = document.getElementById('music-toggle');
+            let isPlaying = false;
+
+            musicToggle.addEventListener('click', () => {
+                if (isPlaying) {
+                    bgMusic.pause();
+                    musicToggle.classList.remove('bg-primary/50');
+                } else {
+                    bgMusic.play().catch(e => console.error("Audio play failed:", e));
+                    musicToggle.classList.add('bg-primary/50');
+                }
+                isPlaying = !isPlaying;
+            });
+        });
+
+        // Navbar scrolled state logic via IntersectionObserver
+        const navbar = document.getElementById('navbar');
+        const headerObserver = new IntersectionObserver(
+            ([e]) => e.intersectionRatio < 1 ? navbar.classList.add('nav-scrolled') : navbar.classList.remove('nav-scrolled'),
+            { threshold: [1] }
+        );
+        // Observe a dummy pixel at the top of the page
+        const topPixel = document.createElement('div');
+        topPixel.style.position = 'absolute';
+        topPixel.style.top = '0';
+        document.body.prepend(topPixel);
+        headerObserver.observe(topPixel);
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if(menu.classList.contains('hidden')){
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
